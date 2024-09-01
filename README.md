@@ -131,16 +131,14 @@ Explique como acessar o projeto, por exemplo: `Abra http://localhost:3000 no seu
 Uma visão geral da estrutura de pastas do projeto:
 
 ```
-plaintextCopiar código
-nome-do-projeto/
+Hackstart/
 ├── public/
 │   ├── index.html
 │   └── ...
 ├── src/
-│   ├── assets/
 │   ├── components/
 │   ├── pages/
-│   ├── services/
+│   ├── lottie/
 │   ├── App.js
 │   └── index.js
 ├── .gitignore
@@ -166,4 +164,3 @@ Liste as principais tecnologias e bibliotecas usadas no projeto:
 - HTML;
 - CSS;
 - Javascript;
-- Etc.
