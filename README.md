@@ -31,72 +31,7 @@ Ferramentas necessárias para rodar o projeto, como:
 
 Passos para instalar as dependências e configurar o ambiente de desenvolvimento:
 
-## 3. Uso
-
-Instruções sobre como rodar o projeto localmente:
-
-```bash
-bashCopiar código
-# Inicie a instalação de pacotes
-npm install
-
-# Inicie o servidor de desenvolvimento
-npm start
-
-```
-
-Explique como acessar o projeto, por exemplo: `Abra http://localhost:3000 no seu navegador para ver o projeto em execução.`
-
-## 4. Estrutura de Pastas
-
-Uma visão geral da estrutura de pastas do projeto:
-
-```
-plaintextCopiar código
-nome-do-projeto/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   ├── App.js
-│   └── index.js
-├── .gitignore
-├── package.json
-└── README.md
-
-```
-
-## 5. Scripts Disponíveis
-
-Lista de scripts que podem ser executados com `npm`, com uma breve descrição:
-
-- `npm install` /:
-- `npm start` /: Inicia o servidor de desenvolvimento.
-- `npm run build` / `yarn build`: Cria uma versão de produção.
-- `npm test` / `yarn test`: Executa os testes.
-
-## 6. Tecnologias Utilizadas
-
-Liste as principais tecnologias e bibliotecas usadas no projeto:
-
-- React;
-- HTML;
-- CSS;
-- Javascript;
-- Etc.
-
-## 7. Licença
-
-Informe a licença do projeto, por exemplo:
-
-Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
-
-
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -166,3 +101,61 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## 3. Uso
+
+Instruções sobre como rodar o projeto localmente:
+
+```bash
+bashCopiar código
+# Inicie a instalação de pacotes
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm start
+
+```
+
+Explique como acessar o projeto, por exemplo: `Abra http://localhost:3000 no seu navegador para ver o projeto em execução.`
+
+## 4. Estrutura de Pastas
+
+Uma visão geral da estrutura de pastas do projeto:
+
+```
+plaintextCopiar código
+nome-do-projeto/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
+
+```
+
+## 5. Scripts Disponíveis
+
+Lista de scripts que podem ser executados com `npm`, com uma breve descrição:
+
+- `npm install` /:
+- `npm start` /: Inicia o servidor de desenvolvimento.
+- `npm run build` / `yarn build`: Cria uma versão de produção.
+- `npm test` / `yarn test`: Executa os testes.
+
+## 6. Tecnologias Utilizadas
+
+Liste as principais tecnologias e bibliotecas usadas no projeto:
+
+- React;
+- HTML;
+- CSS;
+- Javascript;
+- Etc.
