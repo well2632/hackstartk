@@ -71,7 +71,7 @@ function Plugin() {
               <input
                 type="checkbox"
                 id="some_id"
-                disabled
+                disabled={element.disabled}
                 className="
   appearance-none w-8 h-8 border-2 rounded border-gray-300  bg-white"
               />
