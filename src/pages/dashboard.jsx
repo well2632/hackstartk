@@ -102,123 +102,124 @@ function Dashboard() {
 
   return (
     <div className="w-screen flex items-start justify-between ">
-      <img src="/logo_credit.svg"></img>
-      <ul className="flex flex-col gap-2 w-full px-4">
-        <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Dashboard</li>
-        <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Análise de crédito</li>
-        <li className="h-14 rounded-full px-4 flex items-center bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer">Solicitações</li>
-        <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Personalização</li>
-      </ul>
-      <div className="flex flex-col gap-2 w-full px-4 mt-80">
-        <span className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Sair da plataforma</span>
-      </div>
-      <div className="w-full px-10 py-10 flex flex-col gap-4">
-        <h2>Dashboard</h2>
-        <div className="flex flex-col gap-4 w-full lg:w-auto">
-          <MenuHamburguer />
-          <h2 className="text-3xl mt-10">Painel</h2>
+      <div className="bg-[#F6F9FA] h-screen w-80  gap-14 flex-col items-center justify-start pt-10 sticky top-0 left-0 hidden lg:flex">
+        <img src="/logo_credit.svg"></img>
+        <ul className="flex flex-col gap-2 w-full px-4">
+          <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Dashboard</li>
+          <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Análise de crédito</li>
+          <li className="h-14 rounded-full px-4 flex items-center bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer">Solicitações</li>
+          <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Personalização</li>
+        </ul>
+        <div className="flex flex-col gap-2 w-full px-4 mt-80">
+          <span className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Sair da plataforma</span>
         </div>
       </div>
+      <div className="w-full px-4 lg:px-10 flex flex-col lg:gap-10">
+        <div className="w-full flex flex-col gap-4">
+          <h2 className="text-3xl mt-32">Painel</h2>
+          <div className="flex flex-col gap-4 w-full lg:hidden lg:w-auto">
+            <MenuHamburguer />
+          </div>
+        </div>
 
-      <div className="flex gap-4">
-        <div className="bg-[#F6F9FA] mt-10 p-4 lg:p-8 relative w-full">
-          <span className="absolute top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 hidden lg:flex gap-2 items-center justify-center rounded-full">Dia Semana Mês</span>
-          <span className="text-lg">Solicitações de Crédito X Setor</span>
-          <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 mt-4">
-            <div className="flex items-center justify-between bg-white w-full px-4 h-[40px] rounded">
-              <span>Alimentício</span>
-              <span className="font-semibold">35</span>
+        <div className="flex gap-4">
+          <div className="bg-[#F6F9FA] p-4 lg:p-8 mt-8 lg:mt-0 relative w-full">
+            <span className="absolute top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 hidden lg:flex gap-2 items-center justify-center rounded-full">Dia Semana Mês</span>
+            <span className="text-lg">Solicitações de Crédito X Setor</span>
+            <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 mt-4">
+              <div className="flex items-center justify-between bg-white w-full px-4 h-[40px] rounded">
+                <span>Alimentício</span>
+                <span className="font-semibold">35</span>
+              </div>
+              <div className="flex items-center justify-between bg-white w-full px-4 h-[40px] rounded">
+                <span>Logítico</span>
+                <span className="font-semibold">26</span>
+              </div>
+              <div className="flex items-center justify-between bg-white w-full px-4 h-[40px] rounded">
+                <span>Agrícola</span>
+                <span className="font-semibold">12</span>
+              </div>
             </div>
-            <div className="flex items-center justify-between bg-white w-full px-4 h-[40px] rounded">
-              <span>Logítico</span>
-              <span className="font-semibold">26</span>
-            </div>
-            <div className="flex items-center justify-between bg-white w-full px-4 h-[40px] rounded">
-              <span>Agrícola</span>
-              <span className="font-semibold">12</span>
-            </div>
+            <ReactApexChart options={optionsLine} series={seriesLine} type="line" height={350} />
           </div>
-          <ReactApexChart options={options} series={series} type="line" height={350} />
         </div>
-      </div>
 
-      <div className="flex gap-4 mt-8 flex-col lg:flex-row">
-        <div className="bg-white p-6 rounded-lg shadow lg:w-1/3 w-full">
-          <h3 className="text-2xl font-bold">78</h3>
-          <p className="text-sm text-gray-600">Total de Solicitações</p>
+        <div className="flex gap-4 mt-8 w-full lg:w-auto flex-col lg:flex-row">
+          <div className="bg-white p-6 w-full lg:w-1/3 rounded-lg shadow  ">
+            <h3 className="text-2xl font-bold">78</h3>
+            <p className="text-sm text-gray-600">Total de Solicitações</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow lg:w-1/3 w-full">
+            <h3 className="text-2xl font-bold">58</h3>
+            <p className="text-sm text-gray-600">Total Aprovadas</p>
+          </div>
+          <div className="bg-white p-6 rounded-lg shadow lg:w-1/3 w-full">
+            <h3 className="text-2xl font-bold">20</h3>
+            <p className="text-sm text-gray-600">Solicitações Rejeitadas</p>
+          </div>
+          <div className="bg-white p-6 w-full lg:w-1/3 rounded-lg shadow  ">
+            <h3 className="text-2xl font-bold">R$445.685,59</h3>
+            <p className="text-sm text-gray-600">Total de Crédito Solicitado</p>
+          </div>
+          <div className="bg-white p-6 w-full lg:w-1/3 rounded-lg shadow  ">
+            <h3 className="text-2xl font-bold">R$145.685,59</h3>
+            <p className="text-sm text-gray-600">Total de Crédito Concedido</p>
+          </div>
         </div>
-        <div className="bg-white p-6 rounded-lg shadow lg:w-1/3 w-full">
-          <h3 className="text-2xl font-bold">58</h3>
-          <p className="text-sm text-gray-600">Total Aprovadas</p>
-        </div>
-        <div className="bg-white p-6 rounded-lg shadow lg:w-1/3 w-full">
-          <h3 className="text-2xl font-bold">20</h3>
-          <p className="text-sm text-gray-600">Solicitações Rejeitadas</p>
-        </div>
-      </div>
 
-      <div className="flex gap-4 mt-8">
-        <div className="bg-white p-6 rounded-lg shadow w-1/3">
-          <h3 className="text-2xl font-bold">R$445.685,59</h3>
-          <p className="text-sm text-gray-600">Total de Crédito Solicitado</p>
+        <div className="flex gap-4 mt-8">
+          <div className="bg-[#F6F9FA] mt-10 p-8 w-full relative lg:w-1/2">
+            <span className="text-lg">Distribuição de Solicitações por Setor</span>
+            <ReactApexChart options={optionsPie} series={seriesPie} type="donut" height={350} />
+          </div>
         </div>
-      </div>
-      <div className="bg-white p-6 rounded-lg shadow w-1/3">
-        <h3 className="text-2xl font-bold">R$145.685,59</h3>
-        <p className="text-sm text-gray-600">Total de Crédito Concedido</p>
-      </div>
-      <div className="flex gap-4 mt-8">
-        <div className="bg-[#F6F9FA] mt-10 p-8 relative w-1/2">
-          <span className="text-lg">Distribuição de Solicitações por Setor</span>
-          <ReactApexChart options={optionsPie} series={seriesPie} type="donut" height={350} />
-        </div>
-      </div>
-      <div className="bg-[#F6F9FA] mt-10 p-8 w-1/2">
-        <h3 className="text-lg font-bold mb-4">Distribuição dos Valores de Solicitações</h3>
-        <div className="flex flex-col gap-4">
-          <div className="flex items-center gap-4">
-            <div
-              className="h-6"
-              style={{
-                width: "5%",
-                backgroundColor: "#FF6F61",
-                borderRadius: "4px",
-              }}
-            />
-            <span>Acima de R$30.000,00: 5 (8%)</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <div
-              className="h-6"
-              style={{
-                width: "15%",
-                backgroundColor: "#6B5B95",
-                borderRadius: "4px",
-              }}
-            />
-            <span>Entre R$15.000,00 e R$30.000,00: 15 (23%)</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <div
-              className="h-6"
-              style={{
-                width: "25%",
-                backgroundColor: "#88B04B",
-                borderRadius: "4px",
-              }}
-            />
-            <span>Entre R$5.000,00 e R$15.000,00: 35 (54%)</span>
-          </div>
-          <div className="flex items-center gap-4">
-            <div
-              className="h-6"
-              style={{
-                width: "35%",
-                backgroundColor: "#F7B7A3",
-                borderRadius: "4px",
-              }}
-            />
-            <span>Abaixo de R$5.000,00: 10 (15%)</span>
+        <div className="bg-[#F6F9FA] mt-10 p-8 w-full lg:w-1/2">
+          <h3 className="text-lg font-bold mb-4">Distribuição dos Valores de Solicitações</h3>
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center gap-4">
+              <div
+                className="h-6"
+                style={{
+                  width: "5%",
+                  backgroundColor: "#FF6F61",
+                  borderRadius: "4px",
+                }}
+              />
+              <span>Acima de R$30.000,00: 5 (8%)</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <div
+                className="h-6"
+                style={{
+                  width: "15%",
+                  backgroundColor: "#6B5B95",
+                  borderRadius: "4px",
+                }}
+              />
+              <span>Entre R$15.000,00 e R$30.000,00: 15 (23%)</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <div
+                className="h-6"
+                style={{
+                  width: "25%",
+                  backgroundColor: "#88B04B",
+                  borderRadius: "4px",
+                }}
+              />
+              <span>Entre R$5.000,00 e R$15.000,00: 35 (54%)</span>
+            </div>
+            <div className="flex items-center gap-4">
+              <div
+                className="h-6"
+                style={{
+                  width: "35%",
+                  backgroundColor: "#F7B7A3",
+                  borderRadius: "4px",
+                }}
+              />
+              <span>Abaixo de R$5.000,00: 10 (15%)</span>
+            </div>
           </div>
         </div>
       </div>
