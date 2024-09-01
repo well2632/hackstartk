@@ -117,9 +117,9 @@ function Dashboard() {
         <div className="flex flex-col gap-4">
           <h2 className="text-3xl">Solicitações de crédito</h2>
         </div>
-        
+
         <div className="flex gap-4">
-          <div className="bg-[#F6F9FA] mt-10 p-8 relative w-8/12">
+          <div className="bg-[#F6F9FA] mt-2 p-8 relative w-8/12">
             <span className="absolute top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 flex gap-2 items-center justify-center rounded-full">
               Dia Semana Mês
             </span>
@@ -138,41 +138,31 @@ function Dashboard() {
                 <span className="font-semibold">12</span>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="flex gap-4">
-          <div className="bg-[#F6F9FA] mt-10 p-8 relative w-8/12">
-            <span className="absolute top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 flex gap-2 items-center justify-center rounded-full">
-              Dia Semana Mês
-            </span>
-            <span className="text-lg">Solicitações de Crédito X Setor</span>
             <ReactApexChart options={optionsLine} series={seriesLine} type="line" height={350} />
           </div>
         </div>
-
         <div className="flex gap-4 mt-8">
           <div className="bg-white p-6 rounded-lg shadow w-1/3">
-            <h3 className="text-2xl font-bold">73</h3>
+            <h3 className="text-2xl font-bold">78</h3>
             <p className="text-sm text-gray-600">Total de Solicitações</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow w-1/3">
-            <h3 className="text-2xl font-bold">874</h3>
+            <h3 className="text-2xl font-bold">58</h3>
             <p className="text-sm text-gray-600">Total Aprovadas</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow w-1/3">
-            <h3 className="text-2xl font-bold">380</h3>
+            <h3 className="text-2xl font-bold">20</h3>
             <p className="text-sm text-gray-600">Solicitações Rejeitadas</p>
           </div>
         </div>
 
         <div className="flex gap-4 mt-8">
           <div className="bg-white p-6 rounded-lg shadow w-1/3">
-            <h3 className="text-2xl font-bold">R$245.685,59</h3>
+            <h3 className="text-2xl font-bold">R$445.685,59</h3>
             <p className="text-sm text-gray-600">Total de Crédito Solicitado</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow w-1/3">
-            <h3 className="text-2xl font-bold">R$205.685,59</h3>
+            <h3 className="text-2xl font-bold">R$145.685,59</h3>
             <p className="text-sm text-gray-600">Total de Crédito Concedido</p>
           </div>
         </div>
