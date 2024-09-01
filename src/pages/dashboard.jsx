@@ -3,9 +3,12 @@ import Lottie from "react-lottie";
 import * as animationData from "../lottie/loading.json";
 import ReactApexChart from "react-apexcharts";
 import MenuHamburguer from "../components/mobile-header";
+import { useNavigate } from "react-router-dom";
 
 function Dashboard() {
   const [loading, setLoading] = useState(true);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     setTimeout(() => {
@@ -107,7 +110,9 @@ function Dashboard() {
         <ul className="flex flex-col gap-2 w-full px-4">
           <li className="h-14 rounded-full px-4 flex items-center bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer">Dashboard</li>
 
-          <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Análise de crédito</li>
+          <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer" onClick={() => navigate("/")}>
+            Análise de crédito
+          </li>
           <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Solicitações</li>
           <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Personalização</li>
         </ul>
