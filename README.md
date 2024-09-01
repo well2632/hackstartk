@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Uma breve descrição do projeto, explicando o que ele faz e qual problema resolve.
+O front-end da aplicação foi desenvolvido utilizando React e Tailwind CSS, proporcionando uma interface responsiva, moderna e altamente customizável. React foi utilizado para criar componentes reutilizáveis e gerenciar o estado da aplicação, enquanto Tailwind CSS facilitou a estilização com classes utilitárias, permitindo uma rápida prototipação e consistência visual.
 
 ## Demonstração
 
