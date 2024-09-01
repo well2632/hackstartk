@@ -20,7 +20,7 @@ function PageLoading() {
   useEffect(() => {
     setTimeout(() => {
       navigate("/step5");
-    }, 3500);
+    }, 1500);
   }, []);
 
   return (
