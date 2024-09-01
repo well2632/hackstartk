@@ -12,7 +12,7 @@ function App() {
       <div className="h-[80px] flex items-center justify-between px-5 lg:px-20 border-b-2 border-[#DCDCDC] w-full relative">
         <div className="absolute bottom-[-2px]  left-0 w-[45%] border-b-[3px] border-[#A30DEA] "></div>
         <div className="flex gap-10">
-          <img src="seta.svg"></img>
+          <img src="seta.svg" onClick={() => navigate("/step1")}></img>
           <img src="/logo_credit.svg"></img>
         </div>
         <div className="gap-10 hidden lg:flex">

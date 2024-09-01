@@ -4,6 +4,7 @@ import * as animationData from "../lottie/loading.json";
 import { Label, Select } from "flowbite-react";
 import ApexCharts from "apexcharts";
 import ReactApexChart from "react-apexcharts";
+import MenuHamburguer from "../components/mobile-header";
 
 function Analysis() {
   const [loading, setLoading] = useState(true);
@@ -89,7 +90,10 @@ function Analysis() {
       </div>
       <div className="w-full px-4 lg:px-10 py-10 flex flex-col gap-10">
         <div className="flex flex-col gap-4">
-          <h2 className="text-3xl w-full text-center lg:w-auto lg:text-left">Análise de crédito</h2>
+          <MenuHamburguer>
+            <span></span>
+          </MenuHamburguer>
+          <h2 className="text-3xl w-full text-center lg:w-auto lg:text-left mt-20 lg:mt-0">Análise de crédito</h2>
           <span className="text-[#637282] w-full text-center lg:w-auto lg:text-left">Resultado SLC Agrícola</span>
         </div>
 
@@ -98,20 +102,20 @@ function Analysis() {
             <div className="w-full flex items-center justify-center relative rounded bg-[#F7EEF8] h-[110px]">
               <Lottie options={defaultOptions} height={80} width={80} />
               <span className="absolute top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 hidden lg:flex gap-2 items-center justify-center rounded-full ">
-                Relatório gerado pelo módulo Stark Bank base <img src="/multiple-stars.svg" alt="" />
+                Gerado pelo módulo Stark Bank base <img src="/multiple-stars.svg" alt="" />
               </span>
             </div>
             <div className="hidden lg:flex items-center justify-between gap-8">
               <div className="w-6/12 flex items-center justify-center relative rounded bg-[#F7EEF8] h-[400px]">
                 <Lottie options={defaultOptions} height={80} width={80} />
                 <span className="absolute top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 flex gap-2 items-center justify-center rounded-full">
-                  Relatório gerado pelo módulo Agrocred <img src="/multiple-stars.svg" alt="" />
+                  Gerado pelo módulo Agrocred <img src="/multiple-stars.svg" alt="" />
                 </span>
               </div>
               <div className="w-6/12 flex items-center justify-center relative rounded bg-[#F7EEF8] h-[400px]">
                 <Lottie options={defaultOptions} height={80} width={80} />
                 <span className="absolute top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 flex gap-2 items-center justify-center rounded-full">
-                  Relatório gerado pelo módulo Stark Bank base <img src="/multiple-stars.svg" alt="" />
+                  Gerado pelo módulo Stark Bank base <img src="/multiple-stars.svg" alt="" />
                 </span>
               </div>
             </div>
@@ -162,7 +166,7 @@ function Analysis() {
               <div className="bg-[#F6F9FA] mt-0 lg:mt-10 p-8 relative w-full lg:w-8/12 ">
                 <span className="text-lg">Análise da agricultura</span>
                 <span className="lg:absolute hidden static top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 lg:flex gap-2 items-center justify-center rounded-full">
-                  Gerado pelo módulo Stark Bank base <img src="/multiple-stars.svg" alt="" />
+                  Gerado pelo módulo Agrocred <img src="/multiple-stars.svg" alt="" />
                 </span>
                 <div className="w-full py-4">
                   <Select className="w-full" id="countries" required>
@@ -283,9 +287,9 @@ function Analysis() {
               </div>
 
               <div className="flex gap-4 items-center justify-center flex-col-reverse lg:flex-row w-full lg:w-auto">
-                <button className="bg-gray-200 text-black px-4 py-4 rounded text-center w-full lg:w-auto">Rejeitar proposta</button>
+                <button className="bg-red-700 text-white px-4 py-4 rounded text-center w-full lg:w-auto">Rejeitar proposta</button>
                 <button className="bg-gray-200 text-black px-4 py-4 rounded text-center w-full lg:w-auto">Editar proposta</button>
-                <button className="bg-cyan-600 text-white px-4 py-4 rounded text-center w-full lg:w-auto">Aprovar proposta</button>
+                <button className="bg-green-600 text-white px-4 py-4 rounded text-center w-full lg:w-auto">Aprovar proposta</button>
               </div>
             </div>
           </div>
