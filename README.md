@@ -2,11 +2,19 @@
 
 ## Descrição
 
-Uma breve descrição do projeto, explicando o que ele faz e qual problema resolve.
+O front-end da aplicação foi desenvolvido utilizando React e Tailwind CSS, proporcionando uma interface responsiva, moderna e altamente customizável. React foi utilizado para criar componentes reutilizáveis e gerenciar o estado da aplicação, enquanto Tailwind CSS facilitou a estilização com classes utilitárias, permitindo uma rápida prototipação e consistência visual.
 
 ## Demonstração
 
-vídeo demo
+https://youtu.be/sSqRv9NtA-o
+
+<a href="https://youtu.be/sSqRv9NtA-o">
+    <img src="https://img.youtube.com/vi/sSqRv9NtA-o/0.jpg" alt="Assista ao vídeo" width="600">
+</a>
+
+
+Link para o nosso figma:
+https://www.figma.com/design/gxHlmSa0d5UJTPYcf4EPO9/Hacka-Stark-Bank?node-id=5-2&t=RgzJ2igoc5Ypcp4M-1
 
 ## Índice
 
@@ -24,7 +32,7 @@ Ferramentas necessárias para rodar o projeto, como:
 
 - VSCode
 - Github
-- Node.js (versão x.x.x)
+- Node.js 
 - npm -v 20
 
 ## 2. Instalação
@@ -123,16 +131,14 @@ Explique como acessar o projeto, por exemplo: `Abra http://localhost:3000 no seu
 Uma visão geral da estrutura de pastas do projeto:
 
 ```
-plaintextCopiar código
-nome-do-projeto/
+Hackstart/
 ├── public/
 │   ├── index.html
 │   └── ...
 ├── src/
-│   ├── assets/
 │   ├── components/
 │   ├── pages/
-│   ├── services/
+│   ├── lottie/
 │   ├── App.js
 │   └── index.js
 ├── .gitignore
@@ -158,4 +164,3 @@ Liste as principais tecnologias e bibliotecas usadas no projeto:
 - HTML;
 - CSS;
 - Javascript;
-- Etc.
