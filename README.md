@@ -6,7 +6,11 @@ Uma breve descrição do projeto, explicando o que ele faz e qual problema resol
 
 ## Demonstração
 
-vídeo demo
+https://youtu.be/sSqRv9NtA-o
+
+<a href="https://youtu.be/sSqRv9NtA-o">
+    <img src="https://img.youtube.com/vi/sSqRv9NtA-o/0.jpg" alt="Assista ao vídeo" width="600">
+</a>
 
 ## Índice
 
