@@ -105,9 +105,10 @@ function Dashboard() {
       <div className="bg-[#F6F9FA] h-screen w-80  gap-14 flex-col items-center justify-start pt-10 sticky top-0 left-0 hidden lg:flex">
         <img src="/logo_credit.svg"></img>
         <ul className="flex flex-col gap-2 w-full px-4">
-          <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Dashboard</li>
+          <li className="h-14 rounded-full px-4 flex items-center bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer">Dashboard</li>
+
           <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Análise de crédito</li>
-          <li className="h-14 rounded-full px-4 flex items-center bg-cyan-600 text-white hover:bg-cyan-700 cursor-pointer">Solicitações</li>
+          <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Solicitações</li>
           <li className="h-14 rounded-full px-4 flex items-center hover:bg-gray-200 cursor-pointer">Personalização</li>
         </ul>
         <div className="flex flex-col gap-2 w-full px-4 mt-80">
@@ -116,14 +117,14 @@ function Dashboard() {
       </div>
       <div className="w-full px-4 lg:px-10 flex flex-col lg:gap-10">
         <div className="w-full flex flex-col gap-4">
-          <h2 className="text-3xl mt-32">Painel</h2>
+          <h2 className="text-3xl mt-32 lg:mt-16">Painel</h2>
           <div className="flex flex-col gap-4 w-full lg:hidden lg:w-auto">
             <MenuHamburguer />
           </div>
         </div>
 
         <div className="flex gap-4">
-          <div className="bg-[#F6F9FA] p-4 lg:p-8 mt-8 lg:mt-0 relative w-full">
+          <div className="bg-[#F6F9FA] p-4 lg:p-8 mt-4 lg:mt-0 relative w-full">
             <span className="absolute top-4 right-4 bg-[#FBCBFF] text-[#A913B7] px-8 h-10 hidden lg:flex gap-2 items-center justify-center rounded-full">Dia Semana Mês</span>
             <span className="text-lg">Solicitações de Crédito X Setor</span>
             <div className="flex flex-col lg:flex-row w-full lg:w-auto gap-4 mt-4">
