@@ -33,7 +33,7 @@ function App() {
       <div className=" p-5 lg:p-20 flex flex-col gap-4 h-[650px] lg:h-[800px] justify-between">
         <div className="flex flex-col gap-4">
           <h1 className="text-center lg:text-left text-4xl mt-10 lg:mt-0">Seleção de empresa</h1>
-          <span className="text-[#637282] text-center lg:text-left ">Com poucos cliques, faça uma análise completa do da empresa</span>
+          <span className="text-[#637282] text-center lg:text-left ">Com poucos cliques, faça uma análise completa da empresa</span>
           <div className="w-full">
             <div className="mb-2 block w-full">
               <Label htmlFor="countries" value="Empresa selecionada" />
