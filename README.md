@@ -12,6 +12,10 @@ https://youtu.be/sSqRv9NtA-o
     <img src="https://img.youtube.com/vi/sSqRv9NtA-o/0.jpg" alt="Assista ao vídeo" width="600">
 </a>
 
+
+Link para o nosso figma:
+https://www.figma.com/design/gxHlmSa0d5UJTPYcf4EPO9/Hacka-Stark-Bank?node-id=5-2&t=RgzJ2igoc5Ypcp4M-1
+
 ## Índice
 
 1. [Pré-requisitos](notion://www.notion.so/6810871319364f18abe0581b18ec89f7?showMoveTo=true&saveParent=true#pr%C3%A9-requisitos)
