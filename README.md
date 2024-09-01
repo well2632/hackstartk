@@ -164,3 +164,8 @@ Liste as principais tecnologias e bibliotecas usadas no projeto:
 - HTML;
 - CSS;
 - Javascript;
+- Tailwind css.
+
+<div align="center">
+<img src="https://github.com/well2632/hackstartk/blob/master/assets/tecnologias.jpg" width="450"/> <br>
+</div>
