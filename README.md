@@ -1,3 +1,101 @@
+# CREDIT.IA
+
+## Descrição
+
+Uma breve descrição do projeto, explicando o que ele faz e qual problema resolve.
+
+## Demonstração
+
+vídeo demo
+
+## Índice
+
+1. [Pré-requisitos](notion://www.notion.so/6810871319364f18abe0581b18ec89f7?showMoveTo=true&saveParent=true#pr%C3%A9-requisitos)
+2. [Instalação](notion://www.notion.so/6810871319364f18abe0581b18ec89f7?showMoveTo=true&saveParent=true#instala%C3%A7%C3%A3o)
+3. [Uso](notion://www.notion.so/6810871319364f18abe0581b18ec89f7?showMoveTo=true&saveParent=true#uso)
+4. [Estrutura de Pastas](notion://www.notion.so/6810871319364f18abe0581b18ec89f7?showMoveTo=true&saveParent=true#estrutura-de-pastas)
+5. [Scripts Disponíveis](notion://www.notion.so/6810871319364f18abe0581b18ec89f7?showMoveTo=true&saveParent=true#scripts-dispon%C3%ADveis)
+6. [Tecnologias Utilizadas](notion://www.notion.so/6810871319364f18abe0581b18ec89f7?showMoveTo=true&saveParent=true#tecnologias-utilizadas)
+7. [Licença](notion://www.notion.so/6810871319364f18abe0581b18ec89f7?showMoveTo=true&saveParent=true#licen%C3%A7a)
+
+## 1. Pré-requisitos
+
+Ferramentas necessárias para rodar o projeto, como:
+
+- VSCode
+- Github
+- Node.js (versão x.x.x)
+- npm -v 20
+
+## 2. Instalação
+
+Passos para instalar as dependências e configurar o ambiente de desenvolvimento:
+
+## 3. Uso
+
+Instruções sobre como rodar o projeto localmente:
+
+```bash
+bashCopiar código
+# Inicie a instalação de pacotes
+npm install
+
+# Inicie o servidor de desenvolvimento
+npm start
+
+```
+
+Explique como acessar o projeto, por exemplo: `Abra http://localhost:3000 no seu navegador para ver o projeto em execução.`
+
+## 4. Estrutura de Pastas
+
+Uma visão geral da estrutura de pastas do projeto:
+
+```
+plaintextCopiar código
+nome-do-projeto/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   ├── App.js
+│   └── index.js
+├── .gitignore
+├── package.json
+└── README.md
+
+```
+
+## 5. Scripts Disponíveis
+
+Lista de scripts que podem ser executados com `npm`, com uma breve descrição:
+
+- `npm install` /:
+- `npm start` /: Inicia o servidor de desenvolvimento.
+- `npm run build` / `yarn build`: Cria uma versão de produção.
+- `npm test` / `yarn test`: Executa os testes.
+
+## 6. Tecnologias Utilizadas
+
+Liste as principais tecnologias e bibliotecas usadas no projeto:
+
+- React;
+- HTML;
+- CSS;
+- Javascript;
+- Etc.
+
+## 7. Licença
+
+Informe a licença do projeto, por exemplo:
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
