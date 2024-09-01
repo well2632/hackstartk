@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Plugin from "./pages/plugin";
 import FileUpload from "./pages/file-upload";
 import PageLoading from "./pages/loading";
+import Analysis from "./pages/analysis";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/step4",
     element: <PageLoading />,
+  },
+  {
+    path: "/step5",
+    element: <Analysis />,
   },
 ]);
 
