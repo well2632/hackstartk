@@ -28,7 +28,7 @@ Ferramentas necessárias para rodar o projeto, como:
 
 - VSCode
 - Github
-- Node.js (versão x.x.x)
+- Node.js 
 - npm -v 20
 
 ## 2. Instalação
