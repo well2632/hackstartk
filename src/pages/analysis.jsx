@@ -171,7 +171,7 @@ function Analysis() {
               </div>
             </div>
             <div className="bg-[#F6F9FA] mt-10 p-8 relative w-4/12">
-              <span className="text-lg">Análise da agricultura</span>
+              <span className="text-lg">Análise de Founders</span>
               <span className=" bg-[#FBCBFF] text-[#A913B7] px-8 h-10 flex gap-2 items-center justify-center rounded-full">
                 Gerado pelo módulo Scraping
                 <img src="/multiple-stars.svg" alt="" />
@@ -262,7 +262,7 @@ function Analysis() {
             <div className="flex gap-4 items-center justify-center">
               <button className="bg-gray-200 text-black px-4 py-4 rounded text-center">Rejeitar proposta</button>
               <button className="bg-gray-200 text-black px-4 py-4 rounded text-center">Editar proposta</button>
-              <button className="bg-cyan-600 text-white px-4 py-4 rounded text-center">Aprovar proposta proposta</button>
+              <button className="bg-cyan-600 text-white px-4 py-4 rounded text-center">Aprovar proposta</button>
             </div>
           </div>
         </div>

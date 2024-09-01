@@ -7,6 +7,7 @@ import Plugin from "./pages/plugin";
 import FileUpload from "./pages/file-upload";
 import PageLoading from "./pages/loading";
 import Analysis from "./pages/analysis";
+import Dashboard from "./pages/dashboard";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/step5",
     element: <Analysis />,
+  },
+  {
+    path: "/step1",
+    element: <Dashboard />,
   },
 ]);
 
