@@ -8,6 +8,7 @@ import FileUpload from "./pages/file-upload";
 import PageLoading from "./pages/loading";
 import Analysis from "./pages/analysis";
 import Dashboard from "./pages/dashboard";
+import LimitRequestsModal from "./pages/solicitacoes";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/step1",
     element: <Dashboard />,
+  },
+  {
+    path: "/step0",
+    element: <LimitRequestsModal />,
   },
 ]);
 
