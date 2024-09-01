@@ -4,6 +4,7 @@ import * as animationData from "../lottie/loading.json";
 import { Label, Select } from "flowbite-react";
 import ApexCharts from "apexcharts";
 import ReactApexChart from "react-apexcharts";
+import MenuHamburguer from "../components/mobile-header";
 
 function Analysis() {
   const [loading, setLoading] = useState(true);
@@ -89,7 +90,10 @@ function Analysis() {
       </div>
       <div className="w-full px-4 lg:px-10 py-10 flex flex-col gap-10">
         <div className="flex flex-col gap-4">
-          <h2 className="text-3xl w-full text-center lg:w-auto lg:text-left">Análise de crédito</h2>
+          <MenuHamburguer>
+            <span></span>
+          </MenuHamburguer>
+          <h2 className="text-3xl w-full text-center lg:w-auto lg:text-left mt-20 lg:mt-0">Análise de crédito</h2>
           <span className="text-[#637282] w-full text-center lg:w-auto lg:text-left">Resultado SLC Agrícola</span>
         </div>
 

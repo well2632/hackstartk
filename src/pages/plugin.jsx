@@ -92,10 +92,10 @@ function Plugin() {
         </div>
 
         <div className="border-t-2 h-24  items-center flex justify-between">
-          <Button color="gray" className="w-[150px]" onClick={() => navigate("/")}>
+          <Button color="gray" className="w-[150px] mt-8" onClick={() => navigate("/")}>
             Voltar
           </Button>
-          <Button className="w-[150px] " onClick={() => navigate("/step3")}>
+          <Button className="w-[150px] mt-8 " onClick={() => navigate("/step3")}>
             Próximo
           </Button>
         </div>
