@@ -13,21 +13,25 @@ function Plugin() {
       svg: "/icon_s.svg",
       title: "Stark Banking",
       description: "O módulo Start Bank irá fornecer informações do cliente com base no uso dos produtos do banco",
+      disabled: false,
     },
     {
       svg: "/open-banking.svg",
       title: "Open Banking",
       description: "O módulo Open Finance irá buscar dados em outras instituições financeiras para lhe ajudar na sua análise de crédito",
+      disabled: false,
     },
     {
       svg: "/smart-planting.svg",
       title: "Agrocredit",
       description: "Este plugin fornece uma análise de crédito com base em visão computacional filtrando dados do solo e qualidade da safra",
+      disabled: false,
     },
     {
       svg: "/supply_cred.svg",
       title: "Supplycredit",
       description: "Este plugin fornece uma análise de crédito com base nos trajetos e informações logísticas",
+      disabled: true,
     },
   ];
 
@@ -67,6 +71,7 @@ function Plugin() {
               <input
                 type="checkbox"
                 id="some_id"
+                disabled
                 className="
   appearance-none w-8 h-8 border-2 rounded border-gray-300  bg-white"
               />
@@ -78,8 +83,9 @@ function Plugin() {
               <div className="w-6/12">
                 <span className="block w-full lg:w-1/2 whitespace-normal text-gray-500">{element.description}</span>
               </div>
-              <button outline className="border-2 py-2 px-4 rounded border-cyan-500 hidden lg:block ">
-                <span className="text-cyan-500">Mais informações</span>
+              <button outline className=" ">
+                {!element.disabled && <span className="border-2 py-2 px-4 rounded border-cyan-500 hidden lg:block text-cyan-500">Mais informações</span>}
+                {element.disabled && <span className="border-2 py-2 px-4 rounded border-gray-400 hidden lg:block text-gray-400">Em desenvolvimento</span>}
               </button>
             </div>
           ))}
